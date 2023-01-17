@@ -1,0 +1,57 @@
+body {
+    
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
+
+.red {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.green {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.blue {
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 1pix solid yellow;
+}
+
+/* For transforms, the point of origin by default is center*/
+.rotate {
+    transform: rotate(45deg);
+}
+
+/* move the element by the number of pixel on the specified axis
+with the center as (0,0). 
+*/
+.translate {
+    transform: translate(10px, 20px);
+}
+
+.scale {
+    transform: scale(0.5) translate(-50%, -50%);
+}
+
+.skew {
+    transform: skew(45deg, 45deg) translate(100%, 100%);
+}
+
+.skewX {
+    transform: skewX(45deg);
+}
+
+.skewY {
+    transform: skewY(45deg);
+}

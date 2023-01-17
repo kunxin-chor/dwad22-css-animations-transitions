@@ -1,0 +1,62 @@
+body {
+    
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    transition: width 0.5s, height 0.5s, background-color 1s, transform 2s;
+}
+
+/* :hover is a pseudo-class. It's only applied
+when the mouse cursor is over it */
+.box:hover {
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    transform: rotate(45deg);
+}
+
+#some-text {
+    transition: font-size 2s;
+}
+
+#some-text:hover {
+    font-size: 128px;
+}
+
+/* NEGATIVE EXAMPLE: 
+Transition only happens when a change is detected
+on the element */
+#another-box {
+    width: 300px;
+    height: 150px;
+    transition: width 0.5s;
+    background-color: blue;
+}
+
+.longer {
+    width: 1000px  !important;
+}
+
+.red {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.green {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.blue {
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 1pix solid yellow;
+}
+

@@ -1,0 +1,61 @@
+body {
+    
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+.red {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.green {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.blue {
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 1pix solid yellow;
+}
+
+#moving-box {
+ /* the following properties are for animation */
+ animation-duration: 2s;
+ animation-name: moving-box-keyframes;   
+ animation-iteration-count: 2;
+ animation-direction:alternate;
+ /* animation-fill-mode will affect whether
+ the element stays in its last keyframe.
+ If `forwards` it will stay in the last keyframe */
+ animation-fill-mode: forwards; 
+}
+
+/* begin the keyframes */
+@keyframes moving-box-keyframes {
+    /* time unit 0 */
+    from {
+        background-color: red;
+        transform: rotate(0deg) translate(0,0);
+        opacity: 1.0;
+    }
+
+    50% {
+        transform: translate(500px, 100px);
+    }
+
+    to {
+        background-color: blue;
+        transform: rotate(45deg) translate(100px,100px);
+        opacity: 0.0;
+    }
+
+}
