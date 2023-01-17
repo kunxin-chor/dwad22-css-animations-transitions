@@ -36,7 +36,8 @@ body {
  /* animation-fill-mode will affect whether
  the element stays in its last keyframe.
  If `forwards` it will stay in the last keyframe */
- animation-fill-mode: forwards; 
+ animation-fill-mode: forwards;
+  
 }
 
 /* begin the keyframes */
@@ -44,7 +45,7 @@ body {
     /* time unit 0 */
     from {
         background-color: red;
-        transform: rotate(0deg) translate(0,0);
+        transform: rotate(0deg) translate(-200px,0);
         opacity: 1.0;
     }
 
